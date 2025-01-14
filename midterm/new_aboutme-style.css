@@ -46,14 +46,6 @@ body {
 
 }
 
-.cell-bottom-text {
-  position: absolute;
-  bottom: 10px; /* Adjust distance from bottom */
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 14px;
-  color: #666;}
-
 .important{
   color: #f57a64;
   }
