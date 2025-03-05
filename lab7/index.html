@@ -1,104 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <script src="script.js" defer></script>
-        <script>
-            /*
-            function printName(name){
-                console.log(name);
-            }
-
-            const printName2 = (name,surname) => {
-                console.log('Start');
-
-                console.log('End');
-                
-                return(name +''+ surname);
-
-            }
-
-            const mul = (number) => number * 2
-            console.log(mul(2))
-            
-            printName("Hello");
-            console.log(printName2("Chakkapat" , "Promtha"))
-//-------------------------------------------------
-                function success() {
-                    console.log("success called");
-                }
-
-                function hello(cb) {
-                    console.log("hello called");
-                    cb();
-                }
-
-                hello(success);
-//--------------------------------------------------
-*/
-
-/*
-function sendMessage(to, message, callback) {
-    console.log("To " + to + ": " + message);
-    callback();
-}
-
-sendMessage("John", "Hello John", function () {
-    console.log("Message has been sent");
-});
-
-sendMessage("John", "How are you?", () => {
-    console.log("Hooking notification service");
-});
-//---------------------------------------------
-function gcd(a, b, success) {
-    let result;
-    let min = a < b ? a : b;
-    for (let i = min; i >= 1; i--) {
-        if (a % i == 0 && b % i == 0) {
-            result = i;
-            break;
-        }
-    }
-    // Call function and send result back
-    success(result);
-}
-
-gcd(6, 15, function (result2) {
-    console.log("GCD = " + result2);
-});
-
-gcd(16, 24, function (result3) {
-    console.log("Finding GCD of 16 and 24");
-    console.log("Result: " + result3);
-});
-*/
-function iterateArray(array, callback) {
-    for (let i = 0; i < array.length; i++) {
-        callback(array[i], i);
-    }
-}
-
-let numbers = [10, 20, 30, 40, 50];
-let names = ["Chris", "Metin", "John", "Nathan"];
-
-console.log("Diplay indexes and values");
-iterateArray(numbers, function (value, index) {
-    console.log("index: " + index, "value: " + value);
-});
-
-console.log("Length of array elements");
-iterateArray(names, function(value, index) {
-    console.log(value + " -> " + value.length);
-});
-
-        </script>
-        <title>LAB7</title>
-    </head>
-    <body>
-        <div class="container">
-
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB7 - JavaScript DOM Challenges</title>
+</head>
+<body>
+    <div class="header">
+        <img src="1_GR7KsWFb0v1rxkC58-UzbQ.webp" width="20%" alt="JavaScript DOM Exercises">
+        <div class="title">
+            <h1>LAB7 - JavaScript DOM Challenges</h1>
         </div>
-    </body>
+    </div>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Exercise</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Exercise 1: Changing Text Content</td>
+                <td><button class="btn">Show me</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Exercise 2: Modifying CSS Styles</td>
+                <td><button class="btn">Show me</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Exercise 3: Adding and Removing Classes</td>
+                <td><button class="btn">Show me</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Exercise 4: Creating and Appending Elements</td>
+                <td><button class="btn">Show me</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Exercise 5: Removing Elements</td>
+                <td><button class="btn">Show me</button></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Exercise 6: Handling Events</td>
+                <td><button class="btn">Show me</button></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Exercise 7: Traversing the DOM</td>
+                <td><button class="btn">Show me</button></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Exercise 8: Manipulating Form Elements</td>
+                <td><button class="btn">Show me</button></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Exercise 9: Fetching and Displaying Data</td>
+                <td><button class="btn">Show me</button></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Exercise 10: Animations and Transitions</td>
+                <td><button class="btn">Show me</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
 </html>
