@@ -47,7 +47,7 @@ th {
     padding: 20px;
 }
 .image {
-    width: 65%; 
+    width: 50%; 
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
